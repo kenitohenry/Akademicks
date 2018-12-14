@@ -1,0 +1,31 @@
+.allButFooter {
+    min-height: calc(100vh - 140px); 
+}
+.footer{
+    /* position: absolute;
+      bottom: 0; */
+      height: 150px;
+      width: 100%;
+      margin-bottom: 0;
+   
+     background-color: #383535;
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+
+}
+.footer ul{
+    padding:10px;
+    font-size:20px;
+    margin-left:10%;
+
+}
+.footer li{
+    list-style-type: none;
+    margin-top:10px;
+}
+.footer a{
+    text-decoration: none;
+    color:white;
+
+}

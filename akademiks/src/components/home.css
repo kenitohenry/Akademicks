@@ -1,0 +1,51 @@
+.home{
+     /* max-width:800px;  */
+    text-align: center;
+   margin-left:10%;
+   margin-right: 10%;
+}
+@media screen and (max-width: 600px) {
+    .home {
+      /* background-color: olive; */
+      margin:0;
+    }
+  }
+.home  img{
+    display:block;
+}
+.home .links  {
+ display:flex;
+ justify-content: space-around;
+ 
+}
+
+.home .links a{
+    height:50px;
+    width:80px;
+    display:block;
+    text-decoration: none;
+    color:whitesmoke;
+
+}
+.home .links  #math{
+    background-color: rgb(76, 3, 110)
+}
+.home .links  #physics{
+    background-color: rgb(0, 100, 139);
+}
+
+ .quote{
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 1.5em;
+    display:block;
+    text-align: center;
+    padding:15px 15px;
+    /* width:100%; */
+    background-color: rgb(21, 80, 133);
+    color:whitesmoke;
+    width:100%;
+}
+.home-body{
+    padding:10px;
+    font-size:18px;
+}

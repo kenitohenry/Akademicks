@@ -1,0 +1,68 @@
+import React, { Component } from 'react';
+import './adminHome.css';
+import { BrowserRouter, Route, Switch,Link } from 'react-router-dom';
+
+class AdminHome  extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          subject:"",
+            content: '',
+            data:[],
+        }
+        this.selectSubject=this.selectSubject.bind(this);
+        this.selectTopicToUpdate=this.selectTopicToUpdate.bind(this);
+
+          }
+
+          selectSubject(e){
+              let subject= e.target.value
+              this.setState({subject:subject})
+            // console.log(subject)
+            fetch(`/${subject}`)
+            .then(response => response.json())
+            .then(data => this.setState({ data: data }));
+            
+          }
+         selectTopicToUpdate(e){
+           
+         }
+
+  render() {
+      return (
+      
+      <div className="admin-home">
+         <form  >
+             
+             <label htmlFor="subject"> Math <input onChange={this.selectSubject} type="radio" name="subject" value="math" /></label>
+             <label htmlFor="subject"> Physics <input onChange={this.selectSubject} type="radio" name="subject" value="physics"/></label> 
+             {/* <input type="submit" value="Find"/> */}
+         </form>
+         <Link to="/admin/create">
+          
+           <i class="fa fa-file" aria-hidden="true"></i>
+         </Link>
+         <div className="">{this.state.data.map(i=>{
+    return(
+    <div>
+      <div className="card-containers"> <p className="card-module">{i.module} </p>
+      <ul className="module-topics">
+        {i.items.map(item=>{
+          return (<li /* onClick={()=>this.Select(item._id)} */ className="card" key={item._id}>
+           <Link to={{pathname:'/admin/update', state:{subject:this.state.subject, id:item._id}}}> {item.topic} </Link>
+            </li>)
+        })}
+      </ul>
+      </div>
+    </div>)
+  })
+} </div>
+          </div>
+      );
+  }
+}
+
+
+
+
+export default AdminHome;

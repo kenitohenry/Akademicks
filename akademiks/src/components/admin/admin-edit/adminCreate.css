@@ -1,0 +1,47 @@
+
+.create-class{
+    text-align: center;
+    font-size: 1.2em;
+    display:flex;
+    padding-top: 5%;
+}
+
+.create-class  header{
+    font-size:2.5rem;
+
+}
+.create-class form{
+    border:1px dotted  rgba(97, 140, 189, 0.801);
+    text-align: left;
+
+}
+
+.create-class form ul li{
+    list-style: none;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    
+}
+
+.create-class form ul li label{
+   
+    width: 50%;
+    text-align: right;
+    margin-right: 10px;
+
+
+}
+.create-class form ul li select[name=subject]{
+    height:40px ;
+    width:170px;
+    border:0.5px solid rgb(18, 18, 87);
+    border-radius: 3px;
+}
+.create-class form ul li input[type=text]{
+    height:40px ;
+    width:170px;
+    border:0.5px solid rgb(18, 18, 87);
+    border-radius: 3px;
+}
