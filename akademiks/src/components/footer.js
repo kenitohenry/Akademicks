@@ -11,9 +11,9 @@ return (
       <li><NavLink to="/physics"> Physics </NavLink></li>
     </ul>
     <ul>
-      <li><NavLink to="/"> Contact </NavLink></li>
-      <li><NavLink to="/math"> About </NavLink></li>
-      <li><NavLink to="/physics"> Developer </NavLink></li>
+      {/* <li><NavLink to="/"> Contact </NavLink></li> */}
+      <li><NavLink to="/about"> About </NavLink></li>
+      <li><NavLink to="/philosophy"> Philosophy </NavLink></li>
     </ul>
   </ul> )
 

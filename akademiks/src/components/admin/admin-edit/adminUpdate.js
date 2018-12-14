@@ -38,7 +38,7 @@ config = {
     
   }
   handleDelete(){
-      fetch(`/delete/${this.state._id}`)
+      fetch(`/delete/${this.state.id}`)
       .then(response=>response.json())
       .then(data=>this.setState(data))
 

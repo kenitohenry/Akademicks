@@ -7,3 +7,6 @@
 .view ul li{
     float:left;
 }
+.view {
+    padding-top:20px;
+}

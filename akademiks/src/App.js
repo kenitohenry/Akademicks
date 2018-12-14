@@ -60,8 +60,10 @@ function Error1(){
 }
 function Update(){
   return (<div className='update'>
+    <br/><br/>
   <h1>Page Sucessfully Updated</h1>
   <Link to='/'>Home</Link>
+  <hr/>
   <Link to='/admin'>Admin</Link>
   
   </div>)

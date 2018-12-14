@@ -10,7 +10,7 @@ import { BrowserRouter, Route, Switch,Link } from 'react-router-dom';
 class AdminCreate  extends Component {
     constructor(props) {
         super(props);
-        this.state = {
+        this.state = { 
             content: '',
         }
         this.handleSubmit=this.handleSubmit.bind(this);
@@ -75,7 +75,7 @@ config = {
     <li><textarea style={{"display":"none"}} id="comments" name="content"  placeholder="type whatever here" value={this.state.content}></textarea>
     </li>  
       
-    <li><label>File</label> <input type="file" /></li>
+    {/* <li><label>File</label> <input type="file" /></li> */}
     </ul>
     
          <input type="submit" onSubmit={this.handleSubmit} value="Submit"/>

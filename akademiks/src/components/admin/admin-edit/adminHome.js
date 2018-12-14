@@ -33,18 +33,21 @@ class AdminHome  extends Component {
       
       <div className="admin-home">
          <form  >
-             
-             <label htmlFor="subject"> Math <input onChange={this.selectSubject} type="radio" name="subject" value="math" /></label>
-             <label htmlFor="subject"> Physics <input onChange={this.selectSubject} type="radio" name="subject" value="physics"/></label> 
+            <h2>Select Subject to Edit or click the <i class="fa fa-file new-file" aria-hidden="true" ></i>
+       to create new </h2>
+             <label htmlFor="subject" style={{"font-size":"20px"}}> Math <input onChange={this.selectSubject} type="radio" name="subject" value="math" /></label>
+             <label htmlFor="subject" style={{"font-size":"20px"}}> Physics <input onChange={this.selectSubject} type="radio" name="subject" value="physics"/></label> 
              {/* <input type="submit" value="Find"/> */}
          </form>
          <Link to="/admin/create">
           
-           <i class="fa fa-file" aria-hidden="true"></i>
+           <i class="fa fa-file new-file" aria-hidden="true" ></i>
          </Link>
+         <h3>Then Select a topic to edit</h3>
          <div className="">{this.state.data.map(i=>{
     return(
     <div>
+      
       <div className="card-containers"> <p className="card-module">{i.module} </p>
       <ul className="module-topics">
         {i.items.map(item=>{

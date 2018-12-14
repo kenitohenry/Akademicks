@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "jodit": "^3.2.24",
     "jodit-react": "^1.0.17",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.3.16",
+    "morgan": "^1.9.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-router": "^4.3.1",
