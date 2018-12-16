@@ -7,8 +7,10 @@ html, body{
 .App {
   /* text-align: center; */
   /* box-sizing: border-box; */
-   font-family: 'Montserrat', sans-serif;
-  /* line-height: 3px; */
+   /* font-family: 'Montserrat', sans-serif; */
+  font-size: 1.1em;
+  font-family: Lora, serif;
+   line-height: 1.6em;
   /* min-height:100%;
   position: relative;
   /* height:100%; */

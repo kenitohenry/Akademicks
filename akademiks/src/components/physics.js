@@ -41,8 +41,10 @@ function Info(props){
     it arrose becasue of problems we had as humans. Look below on topics that may make you want to revise your perception of this subject
   </article>
   <h4>Interesting topics in Physics</h4>
-  <iframe src="https://www.listennotes.com/embedded/e/67a7ceff95614b4ab04997fe43d06e72" height="270px" width="400px" frameborder="0" scrolling="no"></iframe>
-   <iframe src="https://www.listennotes.com/embedded/e/c87892c783624fbeaf7ce0a4012347d5" height="270px" width="400px" frameborder="0" scrolling="no"></iframe>   </div>
-  }
+  <iframe src="https://www.listennotes.com/embedded/e/3a485bbac52d40249ca477fb6a104a0c" height="270px" width="400px" frameborder="0" scrolling="no"></iframe>
+    
+  <iframe src="https://www.listennotes.com/embedded/e/51f8a31bbef44e9283090f63e486f877" height="270px" width="400px" frameborder="0" scrolling="no"></iframe>
+  </div>
+   }
   return null;
 }

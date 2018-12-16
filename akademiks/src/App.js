@@ -69,3 +69,14 @@ function Update(){
   </div>)
   
 }
+ function About(){
+   return(
+     <div>About</div>
+   )
+ }
+ function Philosophy(){
+   return (
+  <div>Philosophy</div>
+   )
+
+ }
